@@ -45,43 +45,100 @@ header .container .menu a:hover {
 	cursor: pointer;
 	border-bottom: 3px solid #EC9A15;
 }
-header .container .social .list-social {
-    display: inline-block;
-    position: absolute;
-    right: 120px;
-    top: 40%;
-}
-header .container .social .list-social li {
-    display: none;
+header .box {
+	width: 450px;
+    background: rgba(0, 0, 0, .4);
+    padding: 40px;
     text-align: center;
-    list-style: none;
-    color: #fff;
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 5%;
+	color: #fff;
+	position: absolute;
+	right: 40%;
 }
-header .container .title {
-    display: none;
-    width: 45%;
-    position: absolute;
-    left: 10%;
-    top: 60%;
+header .box .box-img {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
 }
-header .container .title .name {
-    color:#FFF20F;
-    font-size: 2em;
+header .box h1 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: 100;
 }
-header .container .title .division {
-    border-color: #000;
+header .box h5 {
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    margin-top: 10px;
 }
-header .container .title .job {
-    color:#FFF20F;
-    font-size: 1.7em;
+header .box p {
+    text-align: justify;
+    font-size: 15px;
+    margin-top: 10px;
 }
-header .container .title .message {
-    color:#FFF20F;
-    font-size: 1.2em;
-    text-decoration-line: underline;
+/* BOTONES SOCIALES*/
+header .box ul {
+    margin-top: 5px;
+}
+
+header .box .middle .btn {
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	background: #f1f1f1;
+	margin: 6px;
+	border-radius: 30%;
+	box-shadow: 0 5px 15px -5px #00000070;
+	color: #3498db;
+	overflow: hidden;
+	position: relative;
+}
+
+header .box .middle .btn i {
+	line-height: 55px;
+	font-size: 26px;
+	transition: .2s linear;
+}
+
+header .box .middle .btn:hover i {
+	transform: scale(1.3);
+	color: #f1f1f1;
+}
+
+header .box .middle .btn::before {
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background: #3498db;
+	transform: rotate(45deg);
+	left: -110%;
+	top: 90%;
+}
+
+header .box .middle .btn:hover::before {
+	animation: anibtn .7s 1;
+	top: -10%;
+	left: -10%;
+}
+
+@keyframes anibtn {
+	0% {
+		left: -110%;
+		top: 90%;
+	}
+
+	50% {
+		left: 10%;
+		top: -30%;
+	}
+
+	100% {
+		top: -10%;
+		left: -10%;
+	}
 }
 header .container .arrow {
     display: inline-block;
