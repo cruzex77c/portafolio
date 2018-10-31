@@ -261,8 +261,8 @@ header .container .arrow {
 	padding: 5px;
 	box-shadow: 2px 2px 5px #999;
 	margin: 10px;
-	color: #999;
 	opacity: .8;
+	text-align: center;
 }
 .proyectos .proyecto:hover {
 	opacity: 1;
