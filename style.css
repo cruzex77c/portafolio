@@ -340,6 +340,13 @@ footer .copyright {
 		cursor: pointer;
 		color: #000;
 	}
+	header .container {
+		background-attachment: scroll;
+	}
+	header .box {
+		width: 100%;
+		right: -.1%;
+	}
 	header .container .list-social {
 		display: none;
 	}
@@ -354,6 +361,9 @@ footer .copyright {
 	header .container .arrow {
 		top: 40%;
 		left: 45%;
+	}
+	.img-parallax {
+		background-attachment: scroll;
 	}
 	.proyectos .proyecto {
 		width: 100%;
