@@ -28,16 +28,7 @@ $(document).ready(function(){
             $('.menu').toggleClass('menu-s');
         }
     });
-    $(window).scroll(function(){
-        var barra = $(window).scrollTop();
-        var position = barra * 0.30;
-        if (barra < 350){
-            $('.container').css({
-                bottom: position+'px'
-            });
-        }
-    });
-    $('.fa-facebook-f').click(function(){
+    $('.fa-facebook-square').click(function(){
         window.open('https://www.facebook.com/otonielvicente.dominguezgonzalez');
     });
     
@@ -49,7 +40,11 @@ $(document).ready(function(){
         window.open('https://www.instagram.com/cruzex77c/');
     });
 
-    $('.fa-twitter').click(function(){
+    $('.fa-codepen').click(function(){
+        window.open('https://codepen.io/cruzex77c/');
+    });
+
+    $('.fa-twitter-square').click(function(){
         window.open('https://twitter.com/otonielex77c');
     });
             
